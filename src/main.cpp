@@ -112,16 +112,16 @@ int main() {
     delete personagem;
 
     // Personagem 2
-    Personagem* personagem = new Guerreiro();
+    Personagem* personagem2 = new Guerreiro();
 
-    personagem = new Armadura(personagem);
-    personagem = new Escudo(personagem);
+    personagem2 = new Armadura(personagem);
+    personagem2 = new Escudo(personagem);
 
-    std::cout << "PERSONAGEM 2: " << personagem->descricao() << std::endl;
-    std::cout << "Ataque: " << personagem->ataque() << std::endl;
-    std::cout << "Defesa: " << personagem->defesa() << std::endl;
+    std::cout << "PERSONAGEM 2: " << personagem2->descricao() << std::endl;
+    std::cout << "Ataque: " << personagem2->ataque() << std::endl;
+    std::cout << "Defesa: " << personagem2->defesa() << std::endl;
 
-    delete personagem;
+    delete personagem2;
 
     return 0;
 }
